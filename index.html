@@ -5,90 +5,97 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Judd Villar | Social Media Strategist</title>
   <style>
-    /* === AI-GENERATED CSS STYLE SECTION === */
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #000;
-      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #000000;
     }
-
     header {
       background-color: #5910E5;
+      color: white;
       padding: 2rem;
       text-align: center;
     }
-
     nav {
       display: flex;
       justify-content: space-between;
-      align-items: center;
       padding: 1rem 2rem;
-      background-color: #000;
-      border-bottom: 2px solid #C3FF83;
-    }
-
-    nav a {
-      color: #C3FF83;
-      margin: 0 1rem;
-      text-decoration: none;
-    }
-
-    .services {
-      padding: 2rem;
-    }
-
-    .service {
-      margin-bottom: 2rem;
-      background-color: #111;
-      padding: 1rem;
-      border-left: 4px solid #C3FF83;
-    }
-
-    .contact {
-      background-color: #5910E5;
-      padding: 2rem;
-    }
-
-    form input, form select, form textarea {
-      display: block;
-      width: 100%;
-      margin: 1rem 0;
-      padding: 0.5rem;
-    }
-
-    button {
       background-color: #C3FF83;
       color: #000;
-      padding: 0.75rem 1.5rem;
-      border: none;
-      cursor: pointer;
+    }
+    nav a {
+      color: #000;
+      margin: 0 1rem;
+      text-decoration: none;
       font-weight: bold;
+    }
+    .services {
+      padding: 3rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+    .service {
+      flex: 1 1 calc(33% - 2rem);
+      background: #f9f9f9;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .service h3 {
+      margin-top: 0;
+    }
+    .price {
+      color: #5910E5;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    .contact {
+      padding: 3rem 2rem;
+      background-color: #f1f1f1;
+      text-align: center;
+    }
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea, select {
+      padding: 0.75rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #5910E5;
+      color: white;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
       transition: background-color 0.3s ease;
     }
-
     button:hover {
-      background-color: #a0e05f;
+      background-color: #3f0bb2;
     }
-
     footer {
       text-align: center;
       padding: 1rem;
-      background-color: #111;
-      color: #aaa;
+      background-color: #eeeeee;
+      font-size: 0.9rem;
     }
-
     @media (max-width: 768px) {
-      nav {
+      .services {
         flex-direction: column;
-        align-items: flex-start;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- === AI-GENERATED HTML HEADER SECTION === -->
   <nav>
     <div><strong>Judd Villar</strong></div>
     <div>
@@ -103,41 +110,43 @@
   </header>
 
   <section class="services">
-    <h2>Our Services</h2>
     <div class="service">
       <h3>The Social Spark (2-Hour Consultation)</h3>
-      <p>A power session to audit your social media, refine your content, or brainstorm fresh ideas.<br><strong>💰 $250 per session</strong></p>
+      <p>A power session to audit your social media, refine your content, or brainstorm fresh ideas. Whether you need a quick fix, feedback, or a strategy boost, we’ll tackle it in two hours.</p>
+      <p class="price">💰 $250 per session</p>
     </div>
     <div class="service">
       <h3>Campaign in a Box (One-Time Social Fix)</h3>
-      <p>A targeted strategy to launch your next big social campaign. Perfect for product launches or brand refreshes.<br><strong>💰 Starting at $1,500 per campaign</strong></p>
+      <p>A targeted strategy to launch your next big social campaign. From goal setting to content creation, I’ll help you craft a results-driven plan for up to three platforms. Perfect for product launches, brand refreshes, or seasonal campaigns.</p>
+      <p class="price">💰 Starting at $1,500 per campaign</p>
     </div>
     <div class="service">
       <h3>In-House, On-Demand (Long-Term Partnership)</h3>
-      <p>Ongoing, in-house social media support tailored to your brand.<br><strong>💰 Starting at $4,500 per month</strong></p>
+      <p>Ongoing, in-house social media support tailored to your brand. From strategy to execution, I work as an extension of your team, ensuring consistent growth, engagement, and content production for up to 12 months.</p>
+      <p class="price">💰 Starting at $4,500 per month</p>
     </div>
   </section>
 
   <section class="contact">
-    <h2>Let’s Get In Touch</h2>
-    <p>Tell me a little bit about your project below, or email me directly at <a href="mailto:judvillar112@gmail.com" style="color:white;">judvillar112@gmail.com</a>.</p>
+    <h2>Let’s get in touch.</h2>
+    <p>Tell me a little bit about your project below, or email me directly at <a href="mailto:judvillar112@gmail.com">judvillar112@gmail.com</a>.</p>
     <form>
-      <input type="text" placeholder="Name" required>
-      <input type="email" placeholder="Email" required>
-      <select required>
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <select name="service">
         <option value="">Select Service</option>
-        <option value="spark">The Social Spark</option>
-        <option value="campaign">Campaign in a Box</option>
-        <option value="inhouse">In-House, On-Demand</option>
+        <option value="social_spark">The Social Spark</option>
+        <option value="campaign_box">Campaign in a Box</option>
+        <option value="in_house">In-House, On-Demand</option>
       </select>
-      <textarea rows="5" placeholder="Message" required></textarea>
+      <textarea name="message" rows="5" placeholder="Message"></textarea>
       <button type="submit">Submit</button>
     </form>
-    <p style="margin-top:1rem;">Thank you for your interest! Please allow 1–3 business days for an answer.</p>
+    <p>Thank you for your interest! Please allow 1-3 business days for an answer. Looking forward to working together.</p>
   </section>
 
   <footer>
-    <p>© 2025 Judd Villar. All rights reserved.</p>
+    &copy; 2025 Judd Villar. All rights reserved.
   </footer>
 
 </body>
