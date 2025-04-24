@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Judd Villar | Social Media Strategist</title>
+
+  <!-- === INTERNAL CSS STYLING (REQUIRED FORMAT) === -->
+  <style>
+    /* === GLOBAL STYLES === */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: #C3FF83;
+    }
+
+    /* === NAVIGATION STYLES === */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #000;
+      border-bottom: 2px solid #C3FF83;
+      flex-wrap: wrap;
+    }
+
+    nav div:first-child {
+      font-weight: bold;
+      color: #fff;
+    }
+
+    nav a {
+      margin: 0 0.75rem;
+    }
+
+    /* === HEADER / HERO SECTION === */
+    header {
+      background-color: #5910E5;
+      padding: 3rem 2rem;
+      text-align: center;
+      animation: fadeIn 2s ease-in;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    /* === SERVICES SECTION === */
+    .services {
+      padding: 2rem;
+    }
+
+    .service {
+      background-color: #111;
+      border-left: 4px solid #C3FF83;
+      padding: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    /* === CONTACT SECTION === */
+    .contact {
+      background-color: #5910E5;
+      padding: 2rem;
+    }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 1rem;
+      border: none;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #C3FF83;
+      color: #000;
+      font-weight: bold;
+      padding: 0.75rem 1.5rem;
+      margin-top: 1rem;
+      cursor: pointer;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      border: none;
+      border-radius: 4px;
+    }
+
+    button:hover {
+      background-color: #a0e05f;
+      transform: scale(1.05);
+    }
+
+    /* === FOOTER SECTION === */
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    /* === ANIMATIONS === */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-10px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* === MOBILE RESPONSIVE === */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      header h1 {
+        font-size: 1.4rem;
+      }
+
+      .service {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- === NAVIGATION BAR === -->
+  <nav>
+    <div>Judd Villar</div>
+    <div>
+      <a href="#">Instagram</a>
+      <a href="#">TikTok</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </nav>
+
+  <!-- === HERO SECTION === -->
+  <header>
+    <h1>Helping creative brands create content that drives community and culture.</h1>
+  </header>
+
+  <!-- === SERVICES SECTION === -->
+  <section class="services">
+    <h2>Our Services</h2>
+
+    <div class="service">
+      <h3>The Social Spark (2-Hour Consultation)</h3>
+      <p>A power session to audit your social media, refine your content, or brainstorm fresh ideas.<br><strong>💰 $250 per session</strong></p>
+    </div>
+
+    <div class="service">
+      <h3>Campaign in a Box (One-Time Social Fix)</h3>
+      <p>A targeted strategy to launch your next big social campaign. From goal setting to content creation.<br><strong>💰 Starting at $1,500 per campaign</strong></p>
+    </div>
+
+    <div class="service">
+      <h3>In-House, On-Demand (Long-Term Partnership)</h3>
+      <p>Ongoing, in-house social media support tailored to your brand.<br><strong>💰 Starting at $4,500 per month</strong></p>
+    </div>
+  </section>
+
+  <!-- === CONTACT FORM SECTION === -->
+  <section class="contact">
+    <h2>Let’s Get In Touch</h2>
+    <p>Tell me a little bit about your project below, or email me directly at <a href="mailto:judvillar112@gmail.com">judvillar112@gmail.com</a>.</p>
+
+    <form>
+      <input type="text" name="name" placeholder="Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <select name="service" required>
+        <option value="">Select Service</option>
+        <option value="spark">The Social Spark</option>
+        <option value="campaign">Campaign in a Box</option>
+        <option value="inhouse">In-House, On-Demand</option>
+      </select>
+      <textarea name="message" rows="5" placeholder="Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+    <p style="margin-top:1rem;">Thank you for your interest! Please allow 1–3 business days for an answer.</p>
+  </section>
+
+  <!-- === FOOTER === -->
+  <footer>
+    <p>© 2025 Judd Villar. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
